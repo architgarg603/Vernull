@@ -1,0 +1,193 @@
+.wrapper {
+    height: 90px;
+    width: 100%;
+}
+
+.top {
+    padding: 0 25px;
+    height: 50px;
+    width: 100%;
+    background: #1b2130;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+
+    .left {
+        font-weight: bold;
+        font-size: x-large;
+    }
+
+    .right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        & > div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60%;
+            background: #283145;
+            margin-right: 15px;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            position: relative;
+
+            img {
+                height: 200%;
+                margin-left: 15px;
+            }
+
+            &:nth-child(2) {
+                border-radius: 50%;
+                height: 40px;
+                width: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                    width: 30px;
+                    height: 30px;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+.bottom {
+    height: 40px;
+    width: 100%;
+    background: #283145;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 25px;
+    & div {
+        position: relative;
+        margin-left: 25px;
+        font-weight: bold;
+        color: #626262 !important;
+        font-size: large;
+    }
+
+    .selected {
+        color: white !important;
+        &::after {
+            width: 100%;
+            height: 4px;
+            content: " ";
+            position: absolute;
+            background: #5585ff;
+            bottom: -10px;
+            left: 0;
+        }
+    }
+}
+
+.coinWrapper {
+    width: 281px;
+    height: 350px;
+    border-radius: 15px;
+    background-color: black;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    padding: 25px 15px;
+    .c1,
+    .c2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+        .cl1 {
+            display: flex;
+            align-items: center;
+            img {
+                margin: 0;
+                width: 20px;
+                height: 20px;
+                margin-right: 10px;
+            }
+        }
+
+        .cl2 {
+            font-weight: bold;
+            font-size: x-large;
+        }
+    }
+    .c2 {
+        padding-bottom: 20px;
+        width: 100%;
+        border-bottom: 2px solid white;
+        margin-bottom: 20px;
+    }
+    .c2 .cl2 {
+        font-size: large;
+    }
+
+    .c3 {
+        display: flex;
+        align-items: center;
+        overflow: auto;
+        width: 100%;
+
+        .cl1,
+        .cl2 {
+            width: 60%;
+            border-radius: 15px;
+            background-color: #73e5c1;
+            margin-right: 15px;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: not-allowed;
+
+            img {
+                height: 140px;
+            }
+        }
+
+        .cl2 {
+            background-color: #8a73e5;
+        }
+    }
+}
+
+.userPopup {
+    width: 221px;
+    height: 150px;
+    border-radius: 15px;
+    background-color: black;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    padding: 25px 15px;
+
+    .l1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: large;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        border-bottom: 2px solid white;
+    }
+    img {
+        height: 20px !important;
+        width: 20px !important;
+    }
+    .l2,.l3{
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        img{
+            margin-right: 15px !important;
+        }
+    }
+}
